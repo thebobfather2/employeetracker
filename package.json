@@ -1,0 +1,25 @@
+{
+  "name": "employeetracker",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thebobfather2/employeetracker.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/thebobfather2/employeetracker/issues"
+  },
+  "homepage": "https://github.com/thebobfather2/employeetracker#readme",
+  "dependencies": {
+    "console-table-printer": "^2.11.1",
+    "inquirer": "^8.2.4",
+    "mysql2": "^3.2.0"
+  }
+}
