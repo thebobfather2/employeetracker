@@ -21,13 +21,23 @@ const db = mysql.createConnection(
     })
     .then(response => {
         if(response.selection === "view all departments") {
-            viewDepartments()
+          viewDepartments()
         }
+        if(response.selection === "view all roles") {
+          viewRoles()
+      }
     })
   };
 
   function viewDepartments() {
     db.query("select * from department", (err, data) => {
+        printTable(data);
+        mainMenu();
+    })
+  }
+
+  function viewRoles() {
+    db.query("select * from role", (err, data) => {
         printTable(data);
         mainMenu();
     })
