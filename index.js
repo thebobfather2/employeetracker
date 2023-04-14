@@ -23,9 +23,14 @@ const db = mysql.createConnection(
         if(response.selection === "view all departments") {
           viewDepartments()
         }
+        
         if(response.selection === "view all roles") {
           viewRoles()
-      }
+        }
+                
+        if(response.selection === "view all employees") {
+          viewEmployees()
+        }
     })
   };
 
@@ -38,6 +43,13 @@ const db = mysql.createConnection(
 
   function viewRoles() {
     db.query("select * from role", (err, data) => {
+        printTable(data);
+        mainMenu();
+    })
+  }
+
+  function viewEmployees() {
+    db.query("select * from employee", (err, data) => {
         printTable(data);
         mainMenu();
     })
