@@ -16,8 +16,8 @@ Git clone the repository, then npm i to install depencencies.
 Run node index.js to initialize the prompts.
 ### Contribution
 Bryan Pike
-### Deployed Link
-N/A
+### Demo Video Link
+https://drive.google.com/file/d/1Tzsx93zSlHKk2-ZweDxgdWlBv6Yn_7hP/view
 ### Tests
 N/A
 ### Contact
